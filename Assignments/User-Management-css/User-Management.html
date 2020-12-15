@@ -19,17 +19,21 @@
 table
        th:hover {background-color:  #4CAF50;
      }
-  th {
+  th ,.EXERCISES{
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
   background-color: rgb(99, 96, 96);
   color: white;
   font-family: segoe,arial,sans-serif;
+  font-size: 20px;
 }
 table {
   border-collapse: collapse;
   width: 100%;
+}
+.EXERCISES{
+  font-weight: bold;
 }
  </style>
 </head>
@@ -51,20 +55,16 @@ table {
           <th>W3.CSS</th>
           <th>JQUERY</th>
           <th>JAVA</th>
-          <th id="EXCERCISES">EXCERCISES</th>
           <th>  
-          <label for="EXCERCISES" ></label>
-          <select id="EXCERCISES" name="Exercises" style="display:none;">
-              <option value="Exercise1">Exercise1</option>
+          <select class="EXERCISES" name="Exercises">
+              <option value="Exercise1">EXERCISES</option>
               <option value="Exercise2">Exercise2</option>
               <option value="Exercise3">Exercise3</option>
               <option value="Exercise4">Exercise4</option>
               </select></th>
-          <th id="REFERENCES">REFERENCES</th>
           <th>
-          <label for="REFERENCES"></label>
-          <select id="REFERENCES" name="REFERENCES" style="display:none;">
-                <option value="Reference1">Reference1</option>
+          <select class="EXERCISES" name="REFERENCES">
+                <option value="Reference1">REFERENCES</option>
                 <option value="Reference2">Reference2</option>
                 <option value="Reference3">Reference3</option>
                 <option value="Reference4">Reference4</option>
