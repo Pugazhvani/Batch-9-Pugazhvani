@@ -4,21 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ConditionalLogic</title>
+  <style>
+  
+  h1{
+    color:blue;
+    text-align:center;
+  }
+  h4{
+    color: crimson;
+    text-align:center;
+  }
+
+</style>
 </head>
 <body>
- <script>
-var num=[];
-for(i=50;i<=100;i++)
-if((i % 2) == 0)
+  <h1>Conditional Logics</h1>
+  <h4>Array,for,if and else statements</h4>
+<script>
+var evenNumber=[];
+var oddNumber=[];
+for( var i=50;i<=100;i++)
 {
-  console.log(evenNumber ="Even Number" );
-  console.log(i);
-}
-else
+if((i % 2)== 0)
 {
-  console.log(oddNumber ="Odd Number" );
-  console.log(i);
+  evenNumber.push(i);
 }
- </script>
+ else
+{
+  oddNumber.push(i);
+}
+}
+console.log("Even Number" );
+console.log(evenNumber);
+console.log("Odd Number" );
+console.log(oddNumber);
+</script>
 </body>
 </html>
