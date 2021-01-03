@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media Query</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+  * {
+  box-sizing: border-box;
+}
+.position{
+  position: sticky;
+}
+nav {
+  float: left;
+  width: 13%;
+  height: 1100px;
+  background:grey;
+  padding: 20px;
+  font-size: 18px;
+  color:black;
+  overflow:auto;
+  border-collapse: collapse;
+  }
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   }
+li a {
+  display: block;
+  text-align: left;
+  color:ivory;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+ul a:hover {background-color: black;
+     }
+     ul a:active{
+        background-color:#4CAF50 ;
+     }
+ aside {
+  width: 15%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  }
+h1{
+        color:#4CAF50;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    .text-right{
+        text-align: right;
+           }
+    button{
+        background-color: #4CAF50;
+        color: white;
+        text-align:right;
+        font-size: 20px;
+        border-color:#4CAF50;
+}
+table
+       th:hover {background-color:  #4CAF50;
+     }
+     th ,.EXERCISES{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  background-color: rgb(99, 96, 96);
+  color: white;
+  font-family: segoe,arial,sans-serif;
+  font-size: 17px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.EXERCISES{
+
+  font-weight: bold;
+}
+p{
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+text-indent: 40px;
+
+}
+h1,h2{
+  color:#4CAF50;
+}
+footer {
+  background-color: #777;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  bottom:0px;
+  width:100%;
+}
+.menu{
+  display:none;
+}
+@media screen and (max-width: 600px) {
+  
+  .menu{
+    display:block;
+  }
+  .element{
+      display:none;
+      width:1000px;
+}
+aside{
+  display: none;
+}
+.lal, .EXERCISES{
+  display:none;
+}
+}
+@media screen and (max-width: 900px) and  (min-width:670px){
+  aside{
+    width:min-content;
+    display: block;
+  }
+  .menu{
+    display:block;
+  }
+  
+  .lal, .EXERCISES{
+  display:none;
+}
+.element{
+      display:none;
+}
+
+
+
+
+}
+ </style>
+</head>
+<body>
+    <h1>W3schools<span style="color:black">.com</span></h1>
+    
+    <p class="text-right">THE WORLD'S LARGEST WEB DEVELOPMENT SITE
+     <button type="button" onclick="alert('Enter Password')">LOGIN</button>
+     <button type="button" onclick="alert('Create Account')">Create Account</button><br>
+    </p>
+  <header>
+    
+  <table> 
+    
+     <tr class="position">
+    
+    <th  style=padding:4px;><button class="menu" onclick="myfunction()"><i class="fas fa-bars"></i></button></th>
+  
+         <th style=padding:4px;> <i class="fas fa-home"></i></th>
+          <th >HTML</th>
+          <th>CSS</th>
+          <th>JAVASCRIPT</th>
+          <th class="lal">PYTHON</th>
+          <th class="lal">BOOTSTARP</th>
+          <th class="lal">W3.CSS</th>
+          <th class="lal">JQUERY</th>
+          <th>MORE</th>
+          <th>  
+          <select class="EXERCISES" name="Exercises">
+              <option value="Exercise1">EXERCISES</option>
+              <option value="Exercise2">Exercise2</option>
+              <option value="Exercise3">Exercise3</option>
+              <option value="Exercise4">Exercise4</option>
+              </select></th>
+          <th>
+          <select class="EXERCISES" name="REFERENCES">
+                <option value="Reference1">REFERENCES</option>
+                <option value="Reference2">Reference2</option>
+                <option value="Reference3">Reference3</option>
+                <option value="Reference4">Reference4</option>
+                </select>
+         </th>
+         <th class="lal">CERTIFICATES</th>
+         <th style=padding:4px;> <i class="fas fa-globe"></i></th>
+         <th style=padding:4px;> <i class="fas fa-search"></i></th>
+         </tr>
+         </table>
+        </div>
+        </header>
+         <div class="element">
+         <nav>
+          <ul>
+            <li>PROGRAMMING LANGUAGES</li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">JAVA</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">BOOTSTARP</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">XML</a></li>
+            <li><a href="#">AJAX</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">DATA SCIENCE</a></li>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">SOLIDITY</a></li>
+            <li><a href="#">MACHINE LEARNING</a></li>
+            <li><a href="#">KOTLIN</a></li>
+            <li><a href="#">NODE JS</a></li>
+            <li><a href="#">ANGULAR JS</a></li>
+            <li><a href="#">SWIFT</a></li>
+            <li><a href="#">TYPESCRIPT</a></li>
+            <li><a href="#">NIM</a></li>
+            <li><a href="#">PONY</a></li>
+            <li><a href="#">GO</a></li>
+            <li><a href="#">DART</a></li>
+            <li><a href="#">ELM</a></li>
+            <li><a href="#">ELIXIR</a></li>
+            <li><a href="#">OCAML</a></li>
+            <li><a href="#">REASON</a></li>
+            <li><a href="#">RUST</a></li>
+            <li><a href="#">PYTHON 3</a></li>
+            <li><a href="#">LISP</a></li>
+            <li><a href="#">LUA</a></li>
+            <li><a href="#">F#</a></li>
+            <li><a href="#">FORTRAN</a></li>
+           
+            </ul>
+        </nav>
+        </div>
+          
+        <aside>
+          <h2>Artificial intelligence
+          </h2>
+          <p>Artificial intelligence (AI), is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals. Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.
+           </p>
+          <h2>Internet of things
+          </h2>
+          <p>The Internet of things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
+          </p>
+          <h2>Machine Learning</h2>
+          <p>Machine learning (ML) is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence.
+          </p>
+         </aside>
+          <section>
+            <h2>PROGRAMMING LANGUAGES</h2>
+           <p> A programming language is a formal language comprising a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.</p>
+           <p>Most programming languages consist of instructions for computers. There are programmable machines that use a set of specific instructions, rather than general programming languages. Since the early 1800s, programs have been used to direct the behavior of machines such as Jacquard looms, music boxes and player pianos. The programs for these machines (such as a player piano's scrolls) did not produce different behavior in response to different inputs or conditions.
+            </p>
+           <p>Thousands of different programming languages have been created, and more are being created every year. Many programming languages are written in an imperative form (i.e., as a sequence of operations to perform) while other languages use the declarative form (i.e. the desired result is specified, not how to achieve it).
+           </p>
+          <h2>Function and target
+          </h2>
+           <p>A computer programming language is a language used to write computer programs, which involves a computer performing some kind of computation or algorithm and possibly control external devices such as printers, disk drives, robots, and so on. For example, PostScript programs are frequently created by another program to control a computer printer or display. More generally, a programming language may describe computation on some, possibly abstract, machine. It is generally accepted that a complete specification for a programming language includes a description, possibly idealized, of a machine or processor for that language. In most practical contexts, a programming language involves a computer; consequently, programming languages are usually defined and studied this way. Programming languages differ from natural languages in that natural languages are only used for interaction between people, while programming languages also allow humans to communicate instructions to machines.
+          </p>
+          <h2>Abstractions</h2>
+           <p>Programming languages usually contain abstractions for defining and manipulating data structures or controlling the flow of execution. The practical necessity that a programming language support adequate abstractions is expressed by the abstraction principle. This principle is sometimes formulated as a recommendation to the programmer to make proper use of such abstractions.
+          </p>
+          <h2>Expressive power
+          </h2>
+           <p>The theory of computation classifies languages by the computations they are capable of expressing. All Turing complete languages can implement the same set of algorithms. ANSI/ISO SQL-92 and Charity are examples of languages that are not Turing complete, yet are often called programming languages.
+          </p>
+           <p>Markup languages like XML, HTML, or troff, which define structured data, are not usually considered programming languages. Programming languages may, however, share the syntax with markup languages if a computational semantics is defined. XSLT, for example, is a Turing complete language entirely using XML syntax. Moreover, LaTeX, which is mostly used for structuring documents, also contains a Turing complete subset.
+           </p>
+          <h2>
+            Algorithmic languages
+          </h2>
+         <p> Algorithmic languages are designed to express mathematical or symbolic computations. They can express algebraic operations in notation similar to mathematics and allow the use of subprograms that package commonly used operations for reuse. They were the first high-level languages.</p>
+          </section>
+         <footer>
+          <p>My first Webpage Layout Structure@2020 End</p>
+        </footer>
+        <script>
+          
+            $(document).ready(function(){
+  $(".menu").click(function(){
+    $(".element").fadeToggle();
+     });
+});
+
+   </script>
+         </body>
+      </html>
