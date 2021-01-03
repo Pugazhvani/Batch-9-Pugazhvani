@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise Jquery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 40px;
+            }
+            table {
+            width:50%;
+          }
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          th, td {
+            padding: 15px;
+            text-align: left;
+          }
+          #t01 tr:nth-child(even) {
+            background-color: gray; 
+          }
+          #t01 tr:nth-child(odd) {
+           background-color: #eee;;
+          }
+          #t01 th {
+            background-color: black;
+            color: white;
+          }
+          .adcls{
+              background-color:goldenrod;
+
+          }          </style>
+          </head>
+          <body>
+         </style>
+    </head>
+    <body>
+        <h1>
+        JQUERY Instructions
+        </h1>
+        
+        <h3><button>Person information</button></h3>
+        <span class="one">Google</span><br>
+        <span class="two">Instagram</span><br>
+        <span class="three">Telegram</span><br>
+        <span id="id1">Telegram</span><br>
+
+        <input id="firstname"  name="fname" placeholder="Enter First Name"/>
+        <input id="lastname"  name="lname" placeholder="Enter Last Name"/><br>
+    
+        <table class="student" id=t01>
+        
+                <thead class="table">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abimanyu</td>
+                        <td>Arjun</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jessy</td>
+                        <td>Fernandes</td>
+                        <td>23</td>
+                    </tr>
+
+                    <tr>
+                        <td>Manik</td>
+                        <td>MAlhothra</td>
+                        <td>26</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>  
+               
+                <label>Favourite Sports:</label>
+                <select id="sports" name="sports">
+                    <option value="select">SELECT</option>
+                    <option value="game1">Hockey</option>
+                    <option value="game2">Tennis</option>
+                    <option value="game3">Gymnastic</option>
+                    <option value="game4">Skating</option>
+                </select><br>
+                
+                <label value="country">Country:</label><br>
+                <label>India : <input type="checkbox" id="mycheck1" checked></label>
+                <label>Russia : <input type="checkbox" id="mycheck2"></label>
+                <label>Australia : <input type="checkbox" id="mycheck3"></label><br>
+                
+                <input type="submit" class="btn btn-info" value="Submit" text-align="center";>
+            
+
+    </body>
+    
+    <script type="text/javascript">
+
+       $("#id1").each(function (){
+           if($(this).text() == "Telegram"){
+               $(this).html("<b>" +$(this).text() + "</b>")
+           }
+       })
+       $(".two").val("whatsapp")
+
+       $("table").val("Person list") 
+       $(document).ready(function(){
+  $("button").click(function(){
+    $("table").toggle();
+  });
+});
+    $("table").css("color", "red")
+    $("h1").addClass("adcls")
+    $("input").addClass("adcls")
+    $("input").removeClass("adcls")
+   
+   
+       $("[type='male']").val("Gens")  //change the value of the selected type.
+
+       $("[value='game3']").val("Horse Riding") //this value changed but the value doesn't show. It will show undefined.
+
+       $("[id='mycheck1']").val() //get the element in checkbox.
+
+       $("[id='mycheck2']").val("Canada") //change the value in checkbox.
+
+       $("#firstname").val()    //get the elements in text box.
+
+       $("#firstname").val("Manik")    //change the elements in textbox.
+
+
+    </script>
+    
+</html>
