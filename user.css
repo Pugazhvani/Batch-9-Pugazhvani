@@ -1,0 +1,46 @@
+.navbar-header {
+    float: right !important;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group{
+    font-size: 15px;
+
+}
+.navbar-header{
+    color:white;
+}
+button{
+    background-color: green;
+    border-radius: 5px;
+    border:none;
+    color:white
+}
+.loginPage button{
+    background-color: green;
+    margin-left: 50%;
+    font-size: 22px;
+}
+.pageContent{
+    margin-top:70px !important;
+    margin:20px;
+}   
+.pageNavigation {
+    
+    width:100%;
+    z-index:1; 
+    top: 0px;
+    margin: 0px;
+}     
+.hide{
+    display:none;
+}  
+.col-md-12 #firstName_error,
+.col-md-12 #lastName_error{
+    margin-top: 5px;
+    width: 300px;
+    font-size: 15px;
+    color:red;
+    padding: 5px 8px;
+    display: none;
+}
